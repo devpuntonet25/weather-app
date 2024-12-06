@@ -1,0 +1,81 @@
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  background-color: transparent;
+  color: white;
+}
+
+/* Estilo para el placeholder */
+input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+button:hover {
+  background-color: rgb(205, 176, 233);
+}
+
+p {
+  margin: 20px 0 10px 0;
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+img {
+  width: 120px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 332px) {
+  input[type="text"] {
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    border-radius: 4px;
+    margin: 10px auto;
+  }
+}
